@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build Docker Image'){
             steps{ 
-                sh "docker build -t musbau8/node-app:$(DOCKER_TAG)"
+                sh "docker build . -t musbau8/node-app:$(DOCKER_TAG)"
 
             }
         }
